@@ -13,7 +13,7 @@
   "devDependencies": {
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.1",
-    "@types/node": "^22.13.14",
+    "@types/node": "^22.15.3",
     "@types/nodemailer": "^6.4.17",
     "cors": "^2.8.5",
     "ts-node": "^10.9.2",
