@@ -21,7 +21,10 @@ const FNavbar: React.FC<NavbarProps> = ({ active }) => {
 
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>FoodSync</div>
+      <div className={styles.logo}>
+      <span >Food</span>
+      <span >Sync</span>
+       </div>
       <button className={styles.hamburger} onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle navigation">
         {menuOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
@@ -34,14 +37,14 @@ const FNavbar: React.FC<NavbarProps> = ({ active }) => {
 
    
         <div className={styles.userAreaMobile}>
-          <div className={styles.userIcon}>👤</div>
+         
           <button onClick={handleLogout} className={styles.logoutButton}>Logout</button>
         </div>
       </nav>
 
       
       <div className={styles.userArea}>
-        <div className={styles.userIcon}>👤</div>
+      
         <button onClick={handleLogout} className={styles.logoutButton}>Logout</button>
       </div>
     </header>

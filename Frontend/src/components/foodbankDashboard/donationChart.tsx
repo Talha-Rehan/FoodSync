@@ -51,10 +51,18 @@ const DonationChart: React.FC<DonationChartProps> = ({ timeRange }) => {
     plugins: {
       legend: {
         display: false,
+        labels: {
+          color: "#ffffff", // white legend text
+        },
       },
       tooltip: {
+        backgroundColor: "#1E1E1E",
+        titleColor: "#00A896",
+        bodyColor: "#ffffff",
+        borderColor: "#00A896",
+        borderWidth: 1,
         callbacks: {
-          label: (ctx: any) => ` ${ctx.parsed.y} meals`,
+          label: (ctx: any) => ` ${ctx.parsed.y} orders`,
         },
       },
     },
@@ -62,19 +70,23 @@ const DonationChart: React.FC<DonationChartProps> = ({ timeRange }) => {
       y: {
         beginAtZero: true,
         ticks: {
-          stepSize: 50,
+          stepSize: 1,
+          color: "#cccccc", // light gray tick text
         },
         grid: {
-          color: "#eee",
+          color: "rgba(255, 255, 255, 0.1)", // subtle grid lines
         },
       },
       x: {
+        ticks: {
+          color: "#cccccc", // light gray labels
+        },
         grid: {
           display: false,
         },
       },
     },
-  }
+  };
 
   return (
     <div style={{ width: "100%", height: "300px" }}>

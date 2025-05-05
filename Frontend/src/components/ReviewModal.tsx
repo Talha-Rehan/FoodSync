@@ -2,7 +2,7 @@
 
 import React, { useState } from "react"
 import styles from "../styles/reviewModal.module.css"
-import StarRating from "./starRating"
+import StarRating from "./StarRating"
 
 interface Order {
   _id: string

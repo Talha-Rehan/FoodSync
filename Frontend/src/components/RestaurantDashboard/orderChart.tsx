@@ -50,8 +50,18 @@ const OrderChart: React.FC<OrderChartProps> = ({ timeRange }) => {
   const options = {
     responsive: true,
     plugins: {
-      legend: { display: false },
+      legend: {
+        display: false,
+        labels: {
+          color: "#ffffff", // white legend text
+        },
+      },
       tooltip: {
+        backgroundColor: "#1E1E1E",
+        titleColor: "#00A896",
+        bodyColor: "#ffffff",
+        borderColor: "#00A896",
+        borderWidth: 1,
         callbacks: {
           label: (ctx: any) => ` ${ctx.parsed.y} orders`,
         },
@@ -61,13 +71,17 @@ const OrderChart: React.FC<OrderChartProps> = ({ timeRange }) => {
       y: {
         beginAtZero: true,
         ticks: {
-          stepSize: 1, 
+          stepSize: 1,
+          color: "#cccccc", // light gray tick text
         },
         grid: {
-          color: "#eee",
+          color: "rgba(255, 255, 255, 0.1)", // subtle grid lines
         },
       },
       x: {
+        ticks: {
+          color: "#cccccc", // light gray labels
+        },
         grid: {
           display: false,
         },

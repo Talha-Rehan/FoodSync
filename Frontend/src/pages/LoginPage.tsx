@@ -6,7 +6,7 @@ import { getUserByFirebaseUID } from "../services/signUp";
 import {getRestaurantByUserId} from "../services/restaurant"
 import {getFoodBankByUserId } from "../services/foodbank"
 import socket from "../services/socket";
-import "../styles/loginPage.css"; 
+import "../styles/LoginPage.css"
 
 export default function LoginPage() {
   const navigate = useNavigate(); 

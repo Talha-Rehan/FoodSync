@@ -12,7 +12,7 @@
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #023844, #00a9cd);
+    background: linear-gradient(135deg, #00a896, #00a896);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -215,7 +215,7 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     font-size: 14px;
     font-weight: 500;
-    color: #00a9cd;
+    color: #00a896;
     white-space: nowrap;
     animation: fadeIn 0.3s ease;
     z-index: 1;
@@ -275,7 +275,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 14px 16px;
-    background: linear-gradient(135deg, #00a9cd, #00a9cd);
+    background: linear-gradient(135deg, #00a896, #004c44);
     color: white;
   }
   
@@ -330,7 +330,7 @@
   
   .message.user {
     align-self: flex-end;
-    background: linear-gradient(135deg, #00a9cd, #006e86);
+    background: linear-gradient(135deg, #00a896, #00554c);
     color: white;
     border-bottom-right-radius: 4px;
   }
@@ -364,12 +364,12 @@
   }
   
   .input-container textarea:focus {
-    border-color: #4f46e5;
+    border-color: #00a896;
     box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.1);
   }
   
   .input-container button {
-    background: linear-gradient(135deg, #00a9cd, #006379);
+    background: linear-gradient(135deg, #00a896, #00a896);
     color: white;
     border: none;
     border-radius: 50%;

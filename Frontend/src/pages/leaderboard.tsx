@@ -3,7 +3,7 @@ import { fetchRestaurants } from "../services/restaurant";
 import { fetchUserById } from "../services/user";
 import "../styles/leaderboard.css";
 import FNavbar from "../components/foodbankNavbar";
-import Navbar from "../components/navBar";
+import Navbar from "../components/NavBar";
 import { useAppSelector } from "../redux/hooks";
 import AIAssistant from '../components/aiAssistant'
 
