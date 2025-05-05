@@ -3,17 +3,31 @@
 import React, { useEffect, useState } from "react";
 import { Bar } from "react-chartjs-2";
 import {
-  Chart as ChartJS,
-  BarElement,
-  CategoryScale,
+  Chart,
+  LineController,
+  LineElement,
+  PointElement,
   LinearScale,
+  Title,
+  CategoryScale,
   Tooltip,
-  Legend,
-} from "chart.js";
+  Legend
+} from 'chart.js';
+
+Chart.register(
+  LineController,
+  LineElement,
+  PointElement,
+  LinearScale,
+  Title,
+  CategoryScale,
+  Tooltip,
+  Legend
+);
+
 import { fetchRestaurantOrdersChart } from "../../services/analytics";
 import { useAppSelector } from "../../redux/hooks";
 
-ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend);
 
 interface OrderChartProps {
   timeRange: string;

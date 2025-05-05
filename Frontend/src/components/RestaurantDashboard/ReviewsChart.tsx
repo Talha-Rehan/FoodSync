@@ -3,6 +3,7 @@
 import { Chart } from "react-chartjs-2"
 import {
   Chart as ChartJS,
+  LineController, // 👈 Add this
   LineElement,
   BarElement,
   CategoryScale,
@@ -11,6 +12,16 @@ import {
   Tooltip,
   Legend,
 } from "chart.js"
+ChartJS.register(
+  LineController, // 👈 Add this
+  LineElement,
+  BarElement,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  Tooltip,
+  Legend
+)
 import { useEffect, useState } from "react"
 import styles from "../../styles/reviewChart.module.css"
 import { useAppSelector } from "../../redux/hooks"

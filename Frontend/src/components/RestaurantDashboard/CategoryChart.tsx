@@ -3,15 +3,31 @@
 import React, { useEffect, useState } from "react"
 import { Doughnut } from "react-chartjs-2"
 import {
-  Chart as ChartJS,
-  ArcElement,
+  Chart,
+  LineController,
+  LineElement,
+  PointElement,
+  LinearScale,
+  Title,
+  CategoryScale,
   Tooltip,
-  Legend,
-} from "chart.js"
+  Legend
+} from 'chart.js';
+
+Chart.register(
+  LineController,
+  LineElement,
+  PointElement,
+  LinearScale,
+  Title,
+  CategoryScale,
+  Tooltip,
+  Legend
+);
+
 import { fetchRestaurantCategoryBreakdown } from "../../services/analytics"
 import { useAppSelector } from "../../redux/hooks"
 
-ChartJS.register(ArcElement, Tooltip, Legend)
 
 const RestaurantCategoryChart: React.FC = () => {
   const [categoryData, setCategoryData] = useState<{ category: string; count: number }[]>([])
