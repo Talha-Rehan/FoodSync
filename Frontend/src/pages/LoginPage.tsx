@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { doSignInWithGoogle } from "../../../backend/src/firebase/auth";
+import { doSignInWithGoogle } from "../firebase/auth";
 import {useAppDispatch} from "../redux/hooks"
 import { setUser, setFirebaseUid } from "../redux/userSlice"
 import { getUserByFirebaseUID } from "../services/signUp";
