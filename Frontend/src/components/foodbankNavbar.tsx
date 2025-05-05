@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate, Link } from "react-router-dom";
 import { clearUser } from "../redux/userSlice";
-import styles from "../styles/navBar.module.css";
+import styles from "../styles/NavBar.module.css";
 import { Menu, X } from "lucide-react"; 
 
 interface NavbarProps {
