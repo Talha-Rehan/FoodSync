@@ -3,7 +3,7 @@
 import { Chart } from "react-chartjs-2"
 import {
   Chart as ChartJS,
-  LineController, // 👈 Add this
+  LineController, 
   LineElement,
   BarElement,
   CategoryScale,
@@ -13,7 +13,7 @@ import {
   Legend,
 } from "chart.js"
 ChartJS.register(
-  LineController, // 👈 Add this
+  LineController, 
   LineElement,
   BarElement,
   CategoryScale,
