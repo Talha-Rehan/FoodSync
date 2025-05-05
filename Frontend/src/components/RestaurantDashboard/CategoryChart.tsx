@@ -3,27 +3,27 @@
 import React, { useEffect, useState } from "react"
 import { Doughnut } from "react-chartjs-2"
 import {
-  Chart,
-  LineController,
+  Chart as ChartJS,
   LineElement,
-  PointElement,
-  LinearScale,
-  Title,
+  BarElement,
+  ArcElement, 
   CategoryScale,
+  LinearScale,
+  PointElement,
   Tooltip,
-  Legend
-} from 'chart.js';
+  Legend,
+} from "chart.js"
 
-Chart.register(
-  LineController,
+ChartJS.register(
   LineElement,
-  PointElement,
-  LinearScale,
-  Title,
+  BarElement,
+  ArcElement, 
   CategoryScale,
+  LinearScale,
+  PointElement,
   Tooltip,
   Legend
-);
+)
 
 import { fetchRestaurantCategoryBreakdown } from "../../services/analytics"
 import { useAppSelector } from "../../redux/hooks"
