@@ -29,7 +29,7 @@ const MONGO_URI = process.env.MONGO_URI as string;
 app.use(express.json());
 
 app.use(cors({
-  origin: "http://localhost:5173", // or the port your frontend runs on
+  origin: "https://food-sync.vercel.app", // or the port your frontend runs on
   credentials: true
 }));
 
@@ -38,7 +38,7 @@ app.use(cors({
 const httpServer = createServer(app);
 const io = new Server(httpServer, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: "https://food-sync.vercel.app",
     methods: ["GET", "POST"],
     credentials: true
   },
