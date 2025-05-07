@@ -91,6 +91,9 @@
   color: #00a896; 
   text-decoration: underline;
 }
+.create-account a:hover {
+  color: #00786c;
+}
 
 .image-container {
   display: none;

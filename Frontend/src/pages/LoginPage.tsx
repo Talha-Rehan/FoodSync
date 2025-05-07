@@ -106,7 +106,7 @@ export default function LoginPage() {
           </div>
 
           <p className="create-account">
-            Need an account? <a href="/signup">Create one</a>
+            Need an account? <a onClick={handleGoogleSignIn}>Create one</a>
           </p>
         </div>
       </div>
