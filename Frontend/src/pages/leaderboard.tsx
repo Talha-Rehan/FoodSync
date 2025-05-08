@@ -85,12 +85,6 @@ function App() {
           {restaurants.slice(3).map((restaurant, index) => (
             <div key={index} className="list-item light-blue">
               <span className="rank">{index + 4}</span>
-              {/* <div className="user-image">
-                <img
-                  src="https://via.placeholder.com/64"
-                  alt={restaurant.name}
-                />
-              </div> */}
               <span className="user-name">{restaurant.name}</span>
               <span className="points">{restaurant.points} Points</span>
             </div>
